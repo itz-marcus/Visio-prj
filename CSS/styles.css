@@ -10,7 +10,7 @@ li {
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 header{
@@ -18,16 +18,16 @@ header{
     top: 0;
     overflow: hidden;
     background-color: white;
+    z-index: 2;
 }
 #container {
     max-width: 100%;
     width: 92%;
     margin: 0 auto;
-    z-index: 3;
 }
 
 .navbar {
-    min-height: 70px;
+    min-height: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,10 +53,6 @@ header{
     transition: 0.4s ease-out;
 }
 
-.nav-link:hover {
-    color: rgb(255, 203, 30);
-}
-
 #home{
     width: 100%;
     height:50px;
@@ -65,6 +61,7 @@ header{
 #home:hover{
     transition: 0.3s;
     background-color: grey;
+     color: rgb(33, 88, 255);
 }
 
 #about{
@@ -120,16 +117,16 @@ header{
 
 .nav-menu {
     position: fixed;
-    right: -100%;
-    top: 70px;
+    left: -100%;
+    top: 130px;
     gap: 0;
     flex-direction: column;
-    background-color: #ffffff;
-    width: 25%;
+    background-color: #061c2c;
+    width: 100%;
     height: 100vh;
     text-align: center;
     transition: 0.4s;
-    overflow-y: hidden;
+    z-index: 2;
 }
 
 .nav-item {
@@ -141,7 +138,7 @@ header{
 }
 
 .nav-menu.active {
-    right: 0;
+    left: 0;
 }
 @media(max-width:600px){
     .logo img{
@@ -149,13 +146,27 @@ header{
     }
 }
 /*------------------------------body------------------------------ */
-.body{
-    z-index: 1;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
 
-}
 .body_img{
     width: 80%;
+}
+#body-cover{
+    background-color:rgba(0, 0, 0, 0.811) ;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+#body-cover.hidden{
+    background-color:rgba(0, 0, 0, 0.811) ;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0s 0s;
 }
