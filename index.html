@@ -37,11 +37,34 @@
     </header>
     <div id="body-cover">bird</div>
     <div class="body">
-        <section >
-            <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/sergey-pesterev-FRMt.png" alt="">   
-            <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/sergey-pesterev-FRMt.png" alt="">   
-            <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/sergey-pesterev-FRMt.png" alt="">   
-        </section>  
+        <section class="slider" >
+            <!-- <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/4.png" alt=""> -->
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                  <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/4.png" style="width:100%">
+                </div>
+              
+                <div class="mySlides1">
+                  <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/1.png" style="width:100%">
+                </div>
+              
+                <div class="mySlides1">
+                  <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides1">
+                  <img class="body_img" src="https://itz-marcus.github.io/Visio_imgs/3.png" style="width:100%">
+                </div>
+              
+                <a class="next" onclick="plusSlides(1, 0)"><img class="nextPng" src="https://itz-marcus.github.io/Visio_imgs/arrow.png" alt=""></a>
+              </div>
+            </section>  
+            <div style="text-align:center">
+              <span onclick="currentSlide(4, 0)"><img src="https://itz-marcus.github.io/Visio_imgs/indicator.png"></span>
+              <span onclick="currentSlide(1, 0)"><img src="https://itz-marcus.github.io/Visio_imgs/indicator.png"></span>
+              <span onclick="currentSlide(2, 0)"><img src="https://itz-marcus.github.io/Visio_imgs/indicator.png"></span>
+              <span onclick="currentSlide(3, 0)"><img src="https://itz-marcus.github.io/Visio_imgs/indicator.png"></span>
+            </div>
     </div>
     
     <script src="Script/index.js"></script>
