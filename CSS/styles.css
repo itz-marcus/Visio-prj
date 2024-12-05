@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
 }
+
 /*------------------------------Navbar------------------------------ */
 li {
     list-style: none;
@@ -13,16 +14,18 @@ a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-header{
+
+header {
     position: sticky;
     top: 0;
     overflow: hidden;
     background-color: white;
     z-index: 2;
 }
+
 #container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     max-width: 100%;
     width: 98%;
     margin: 0 auto;
@@ -36,17 +39,18 @@ header{
     align-items: center;
 }
 
-.logo img{
-    object-fit:contain;
+.logo img {
+    object-fit: contain;
     width: 12vw;
 }
+
 .nav-branding {
     font-size: 2rem;
 }
 
 .nav-menu {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     gap: 60px;
     padding-top: 3vh;
@@ -56,33 +60,33 @@ header{
     transition: 0.4s ease-out;
 }
 
-#home{
+#home {
     width: 100%;
-    height:50px;
+    height: 50px;
 }
 
-#home:hover{
+#home:hover {
     transition: 0.3s;
     background-color: grey;
-     color: rgb(33, 88, 255);
+    color: rgb(33, 88, 255);
 }
 
-#about{
+#about {
     width: 100%;
-    height:50px;
+    height: 50px;
 }
 
-#about:hover{
+#about:hover {
     transition: 0.3s;
     background-color: grey;
 }
 
-#contact{
+#contact {
     width: 100%;
-    height:50px;
+    height: 50px;
 }
 
-#contact:hover{
+#contact:hover {
     transition: 0.3s;
     background-color: grey;
 }
@@ -140,26 +144,31 @@ header{
 .nav-menu.active {
     left: 0;
 }
-@media(max-width:600px){
-    .logo img{
+
+@media(max-width:600px) {
+    .logo img {
         width: 70px;
     }
 }
+
 /*------------------------------body------------------------------ */
-.body{
-    background-color: black;
+.body {
+    background-color: rgb(255, 255, 255);
+    margin-top: 1vw;
 }
 
-.slider{
+.slider {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.body_img{
+
+.body_img {
     width: 82%;
 }
-#body-cover{
-    background-color:rgba(0, 0, 0, 0.811) ;
+
+#body-cover {
+    background-color: rgba(0, 0, 0, 0.811);
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -168,8 +177,9 @@ header{
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
-#body-cover.hidden{
-    background-color:rgba(0, 0, 0, 0.811) ;
+
+#body-cover.hidden {
+    background-color: rgba(0, 0, 0, 0.811);
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -180,23 +190,23 @@ header{
 }
 
 .slideshow-container {
-  max-width: 83%;
-  position: relative;
-  margin: auto;
+    max-width: 83%;
+    position: relative;
+    margin: auto;
 }
 
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 45%;
-  padding: 1vw;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  height: inherit;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    padding: 1vw;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    height: inherit;
 }
 
 .nextPng {
@@ -204,26 +214,44 @@ header{
 }
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.next:hover{
-   transform: translateX(0.8vw); 
+.next:hover {
+    transform: translateX(0.8vw);
 }
-/* Page indicators (dots) */
+
+.dots {
+    position: absolute; /* Positioning the dots absolutely */
+    bottom: 4%; /* Adjust this value to move the dots up or down */
+    right: -3%; /* Center the dots horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 10; /* Ensure dots are above the images */
+    display: flex;
+    flex-wrap: nowrap;
+    width: 7.5vw;
+    justify-content: space-between;
+}
+
 .dot {
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    background-color: rgb(218, 218, 218);
     border-radius: 50%;
-    display: inline-block;
     transition: background-color 0.6s ease;
     cursor: pointer;
-  }
-  
-  /* Active dot */
-  .active {
-    background-color: #717171;
-  }
+    display: inline-block; /* Make dots inline */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.active1 {
+    opacity: 0.4;
+    transform: rotate(140deg);
+    transform-origin: 62% 62%;
+    transition: 0.3s; 
+}
+
+.indicator{
+    object-fit: contain;
+    width: 1.5vw;
+}

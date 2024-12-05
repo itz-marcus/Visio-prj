@@ -47,12 +47,12 @@ function showSlides(n, no) {
   
   // Remove active class from all dots
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active", "");
+     dots[i].className = dots[i].className.replace(" active1", "");
   }
   
   // Display the current slide
   x[slideIndex[no]-1].style.display = "block";  
   
   // Add active class to the current dot
-  dots[slideIndex[no]-1].className += " active";
+  dots[slideIndex[no]-1].className += " active1";
 }
