@@ -378,6 +378,9 @@ header {
     background-color: #061c2c;
 }
 
+.mobile{
+    display: none;
+}
 .sub-box-text1 {
     color: white;
     font-weight: bold;
@@ -492,5 +495,8 @@ header {
         width: 80vw;
         height: 20vw;
         align-items: center;
+    }
+    .mobile{
+        display: block;
     }
   }
