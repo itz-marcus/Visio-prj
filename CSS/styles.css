@@ -477,6 +477,12 @@ header {
     .nav-menu{
         top: 10vw !important; 
     }
+    .active1 {
+        opacity: 0.4;
+        transform: rotate(140deg);
+        transform-origin: 42% 72%;
+        transition: 0.3s;
+    }
   }
   @media(max-width:600px) {
     .cubes{
@@ -516,5 +522,27 @@ header {
     }
     .nav-menu{
         top: 15vw !important; 
+    }
+    .active1 {
+        opacity: 0.4;
+        transform: rotate(140deg);
+        transform-origin: 42% 82%;
+        transition: 0.3s;
+    }
+    .dots {
+        bottom: 7%;
+
+    }
+  }
+  @media(max-width:400px){
+    .active1 {
+        opacity: 0.4;
+        transform: rotate(140deg);
+        transform-origin: 42% 92%;
+        transition: 0.3s;
+    }
+    .dots {
+        bottom: 8%;
+
     }
   }
