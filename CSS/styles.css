@@ -474,6 +474,9 @@ header {
     .logo,#logo {
         width: 130px !important;
     }
+    .nav-menu{
+        top: 10vw !important; 
+    }
   }
   @media(max-width:600px) {
     .cubes{
@@ -510,5 +513,8 @@ header {
     }
     .logo,#logo {
         width: 100px !important;
+    }
+    .nav-menu{
+        top: 15vw !important; 
     }
   }
