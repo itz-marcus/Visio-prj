@@ -47,7 +47,7 @@ header {
 
 .logo #logo {
     object-fit: contain;
-    width: 12vw;
+    width: 15vw;
     transition: 0.3s;
 }
 
@@ -151,12 +151,6 @@ header {
 
 .nav-menu.active {
     left: 0;
-}
-
-@media(max-width:600px) {
-    .logo img {
-        width: 70px;
-    }
 }
 
 /*------------------------------body------------------------------ */
@@ -471,8 +465,17 @@ header {
         width: 200px;
         margin-top: 4vw;
     }
+    header{
+        height: 10vw;
+    }
+    #navbar{
+        min-height: 7vw;
+    }
+    .logo,#logo {
+        width: 130px !important;
+    }
   }
-  @media(max-width:426px) {
+  @media(max-width:600px) {
     .cubes{
         display: flex;
         flex-direction: column;
@@ -498,5 +501,14 @@ header {
     }
     .mobile{
         display: block;
+    }
+    header{
+        height: 15vw;
+    }
+    #navbar{
+        min-height: 20px;
+    }
+    .logo,#logo {
+        width: 100px !important;
     }
   }
