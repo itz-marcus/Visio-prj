@@ -270,7 +270,7 @@ header {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    width: 77%;
+    width: 80%;
     justify-content: space-between;
 }
 
@@ -286,12 +286,12 @@ header {
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
-    width: 77%;
+    width: 80%;
 }
 
 .mainbox {
     background-color: #061c2c;
-    width: 24.5vw;
+    width: 25.5vw;
     height: 10vw;
     transition: 0.2s;
     cursor: pointer;
@@ -319,7 +319,7 @@ header {
 
 .sub-box-container {
     display: flex;
-    width: 24.5vw;
+    width: 25.5vw;
     justify-content: space-between;
 }
 
@@ -328,7 +328,7 @@ header {
     justify-content: space-between;
     margin-top: 1.5vw;
     background-color: #244ac2;
-    width: 11.5vw;
+    width: 12vw;
     height: 2vw;
     transition: 0.2s;
     cursor: pointer;
@@ -342,7 +342,7 @@ header {
     margin: 0.4vw;
     color: white;
     font-weight: bold;
-    font-size: 0.7vw;
+    font-size: 0.9vw;
 }
 
 .sub-box-icon {
