@@ -356,6 +356,40 @@ header {
     object-fit: contain;
     width: 1vw;
 }
+.sub-box-container1 {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.sub-box1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5vw;
+    background-color: #244ac2;
+    width: 39vw;
+    height: 7vw;
+    transition: 0.2s;
+    cursor: pointer;
+    align-items: center;
+}
+
+.sub-box1:hover {
+    background-color: #061c2c;
+}
+
+.sub-box-text1 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-left: 2vw;
+}
+
+.sub-box-icon1 {
+    margin-right: 2vw;
+    object-fit: contain;
+    width: 3vw;
+}
 
 .slide-textbox-dup{
     z-index: 3 ;
@@ -433,5 +467,30 @@ header {
         object-fit: contain;
         width: 200px;
         margin-top: 4vw;
+    }
+  }
+  @media(max-width:426px) {
+    .cubes{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-box{
+        display: none;
+    }
+    .box-icon{
+        width: 10vw !important;
+        margin-left: 4vw;
+    }
+
+    .box-text{
+        font-size: 5vw;
+        width: 50%;
+    }
+    .mainbox{
+        display: flex;
+        margin-bottom: 3vw;
+        width: 80vw;
+        height: 20vw;
+        align-items: center;
     }
   }
