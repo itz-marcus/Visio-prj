@@ -49,6 +49,7 @@ function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
   let dots = document.getElementsByClassName("dot");
+  let textboxs = document.getElementsByClassName("slide-textbox");
   
   if (n > x.length) {slideIndex[no] = 1}    
   if (n < 1) {slideIndex[no] = x.length}
@@ -62,10 +63,15 @@ function showSlides(n, no) {
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" active1", "");
   }
+
+  for (i = 0; i < textboxs.length; i++) {
+    textboxs[i].className = textboxs[i].className.replace(" active2", "");
+  }
   
   // Display the current slide
   x[slideIndex[no]-1].style.display = "block";  
   
   // Add active class to the current dot
   dots[slideIndex[no]-1].className += " active1";
+  textboxs[slideIndex[no]-1].className += " active2";
 }

@@ -21,7 +21,7 @@ header {
     top: 0;
     overflow: hidden;
     background-color: white;
-    z-index: 2;
+    z-index: 5;
 }
 
 #container {
@@ -33,6 +33,7 @@ header {
 }
 
 #navbar {
+    position: relative;
     overflow: hidden;
     width: 83%;
     min-height: 130px;
@@ -41,6 +42,7 @@ header {
     align-items: center;
     transition: 0.3s;
     padding: 15px 15px;
+    z-index: 5;
 }
 
 .logo #logo {
@@ -167,10 +169,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .body_img {
-    width: 82%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
 }
 
 #body-cover {
@@ -178,7 +183,7 @@ header {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0s 0.5s;
@@ -189,7 +194,7 @@ header {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
     visibility: visible;
     transition: opacity 0.5s ease, visibility 0s 0s;
@@ -213,6 +218,7 @@ header {
     border-radius: 0 3px 3px 0;
     user-select: none;
     height: inherit;
+    z-index: 2;
 }
 
 .nextPng {
@@ -233,7 +239,7 @@ header {
     bottom: 4%;
     right: -3%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-wrap: nowrap;
     width: 7.5vw;
@@ -351,20 +357,63 @@ header {
     width: 1vw;
 }
 
-.bars {
-    padding-top: 35px;
+.slide-textbox-dup{
+    z-index: 3 ;
     position: absolute;
-    display: flex;
-    height: 8vw;
-    width: 100%;
+    top: 45%;
+    left: -36.7%;
+    background-image: linear-gradient(to right, #244ac2,#244ac2,#244ac2,#244ac2,#244ac2,#244ac2,#2449c25c);
+    height: 7vw;
+    width: 30vw;
 }
-
-.bar1 {
+.slide-textbox-dup3{
+    z-index: 1 ;
+    position: absolute;
+    top: 45%;
+    left: -8%;
     background-color: #244ac2;
-    width: 50%;
+    height: 7vw;
+    width: 30vw;
+}
+.slide-textbox-dup2{
+    z-index: 1 ;
+    position: absolute;
+    top: 45%;
+    right: -20%;
+    background-color: #000000;
+    height: 7vw;
+    width: 30vw;
+    overflow-x: hidden;
+}
+.slide-textbox{
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    background-color: #244ac2;
+    height: 7vw;
+    width: 30vw;
+    left: -38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
 }
 
-.bar2 {
-    background-color: black;
-    width: 50%;
+.active2{
+    transition: 0.3s ;
+    transform: translateX(100%);
 }
+
+.slide-text{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+@keyframes fadeIn {
+    from { left: -80%; }
+    to { left: -38%; }
+  }
+  .slide-textbox.active2 {
+    animation: fadeIn 0.8s forwards; 
+  }
