@@ -32,16 +32,20 @@ header {
 }
 
 .navbar {
+    overflow: hidden;
     width: 83%;
     min-height: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
+    padding: 15px 15px;
 }
 
-.logo img {
+.logo #logo {
     object-fit: contain;
     width: 12vw;
+    transition: 0.3s;
 }
 
 .nav-branding {
@@ -223,11 +227,11 @@ header {
 }
 
 .dots {
-    position: absolute; /* Positioning the dots absolutely */
-    bottom: 4%; /* Adjust this value to move the dots up or down */
-    right: -3%; /* Center the dots horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    z-index: 10; /* Ensure dots are above the images */
+    position: absolute;
+    bottom: 4%;
+    right: -3%;
+    transform: translateX(-50%);
+    z-index: 1;
     display: flex;
     flex-wrap: nowrap;
     width: 7.5vw;
@@ -240,8 +244,7 @@ header {
     border-radius: 50%;
     transition: background-color 0.6s ease;
     cursor: pointer;
-    display: inline-block; /* Make dots inline */
-    cursor: pointer; /* Change cursor to pointer */
+    display: inline-block;
 }
 
 .active1 {
@@ -268,7 +271,79 @@ header {
     width: 77%;
     justify-content:space-between;
 }
+
 .text-img{
     object-fit: contain;
     width: 25vw;
+}
+
+.cubes{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    width: 77%;
+}
+
+.mainbox{
+    background-color: #061c2c ;
+    width: 24.5vw;
+    height: 10vw;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.mainbox:hover{
+transform: scale(1.06);
+}
+
+.box-icon{
+    margin: 1.2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 0;
+    object-fit: contain;
+    width: 2.5vw;
+}
+
+.box-text{
+    color: white;
+    margin-left: 1.2vw;
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 10.1vw;
+}
+
+.sub-box-container{
+    display: flex;
+    width: 24.5vw;
+    justify-content: space-between;
+}
+
+.sub-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5vw;
+    background-color: #244ac2; 
+    width: 11.5vw;
+    height: 2vw;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.sub-box:hover{
+    background-color: #061c2c ;
+}
+
+.sub-box-text{
+    margin: 0.4vw;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7vw;
+}
+
+.sub-box-icon{
+    margin: 0.4vw;
+    object-fit: contain;
+    width: 1vw;
 }

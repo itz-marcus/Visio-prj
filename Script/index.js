@@ -12,6 +12,17 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 }))
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0px 0px";
+    document.getElementById("logo").style.width = "11vw";
+  } else {
+    document.getElementById("navbar").style.padding = "15px 15px";
+    document.getElementById("logo").style.width = "12vw";
+  }
+}
 /*------------------------------background darken------------------------------ */
 function myFunction() {
   var x = document.getElementById("body-cover");
